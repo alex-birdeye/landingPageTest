@@ -21,7 +21,7 @@ body textarea:required:valid
 
 section,
 .main_head
-	position: relative
+	position: relative 
 
 .main_head
 	min-height: 480px
@@ -53,18 +53,18 @@ section,
 .logo_container
 	float: left
 svg
-	height: 20px
-	width: 20px
+	height: 60px
+	width: 60px
 	z-index: 100
 	position: relative
 .toggle_mnu
-	height: 20px
-	width: 20px
+	height: 60px
+	width: 60px
 	float: right
 	position: fixed
-	right: 10px
-	top: 10px
-	z-index: 100
+	right: 20px
+	top: 20px
+	z-index: 1000
 	border: none
 	span
 		display: block
@@ -72,14 +72,14 @@ svg
 body 
 	background-color: #333
 
-$w: 16px
-$h: 1px
+$w: 28px
+$h: 3px
 
 .sandwich
 	width: $w
 	height: $w
 	position: absolute
-	top: 5
+	top: 8px
 	bottom: 0
 	left: 0
 	right: 0
@@ -101,7 +101,7 @@ $h: 1px
 	position: relative
 	width: $w
 	height: $h
-	top: $h * 4
+	top: $h * 2.2
 	background: rgb(255, 255, 255)
 	border: none
 	border-radius: 4px 4px 4px 4px
@@ -112,7 +112,7 @@ $h: 1px
 	position: relative
 	width: $w
 	height: $h
-	top: $h * 8
+	top: $h * 4.5
 	background: rgb(255, 255, 255)
 	border: none
 	border-radius: 4px 4px 4px 4px
@@ -121,10 +121,10 @@ $h: 1px
 
 .sandwich.active 
 	.sw-topper
-		top: 6px
+		top: 9px
 		transform: rotate(135deg)
 	.sw-bottom
-		top: 5px
+		top: 6px
 		transform: rotate(-135deg)
 	.sw-footer
 		opacity: 0
@@ -146,24 +146,59 @@ $h: 1px
 		padding: 0
 		margin: 0
 	ul 
-		margin-top: 70px
+		margin-top: 180px
 		text-align: center
 		a
 			color: #fff
 			display: block
 			text-transform: uppercase
-			font-size: 6px
+			font-size: 12px
 			opacity: 0
 			position: relative
-			height: 25px
+			height: 60px
 			outline: none
 			span
 				display: block
 				position: relative
-				top: -17px
+				top: -40px
 				left: 0
 				height: 100%
 				+transition(all 0.5s ease)
 				&:hover
-					background-color: rgba(255,255,255,.05)
+					background-color: rgba(255,255,255,.08)
 
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		p 
+			margin: 0
+			text-transform: uppercase
+		h1
+			display: inline-block
+			border: 8px solid #fff
+			color: #fff
+			padding: 10px 35px
+			text-transform: uppercase
+			font-size: 2.8em
+			font-weight: bold
+			background-color: rgba(0,0,0,.4)
+			box-shadow: rgba(0,0,0,.3) 0 0 0 1000px
+
+.toggle_mnu
+	background-color: #000
+.h_opacify
+	opacity: .3
+	+transition(all .2s ease)

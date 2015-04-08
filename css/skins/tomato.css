@@ -21,12 +21,12 @@ p {
   background-color: #222; }
 
 svg path {
-  fill: #222; }
-
-.toggle_mnu {
-  background-color: #222; }
+  fill: #888; }
 
 .top_mnu a:hover {
   color: #FF6347; }
 .top_mnu a {
   letter-spacing: 2px; }
+
+.top_text p {
+  color: #FAFAFA; }
