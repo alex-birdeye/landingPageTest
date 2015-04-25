@@ -8,6 +8,9 @@ $(document).ready(function() {
 		heightDetect()
 	})
 
+	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
+	$(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");
+
 	$(".toggle_mnu").click(function() {
  		$(".sandwich").toggleClass("active");
 	});

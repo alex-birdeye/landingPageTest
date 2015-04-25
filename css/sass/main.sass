@@ -69,10 +69,10 @@ section
 		background-repeat: no-repeat
 		background-position: center center
 		background-color: #fff
-		height: 60px
-		width: 60px
-		margin-top: -30px
-		margin-left: -30px
+		height: 160px
+		width: 160px
+		margin-top: -90px
+		margin-left: -70px
 		left: 50%
 		top: 50%
 		position: absolute
@@ -176,6 +176,15 @@ svg
 	ul 
 		margin-top: 180px
 		text-align: center
+		li
+			&:nth-child(1) a
+				+animation-delay(.1s)
+			&:nth-child(2) a
+				+animation-delay(.2s)
+			&:nth-child(3) a
+				+animation-delay(.3s)
+			&:nth-child(4) a
+				+animation-delay(.4s)
 		a
 			color: #fff
 			display: block
@@ -215,6 +224,7 @@ svg
 		p 
 			margin: 0
 			text-transform: uppercase
+			+animation-delay(1.5s)
 		h1
 			display: inline-block
 			padding: 10px 35px
@@ -227,6 +237,7 @@ svg
 			margin-left: 20px
 			margin-right: 20px
 			background-color: rgba(0,0,0,.4)
+			+animation-delay(1s)
 			// box-shadow: rgba(0,0,0,.3) 0 0 0 1000px
 
 .toggle_mnu
