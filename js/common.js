@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$(".popup").magnificPopup({type:"image"});
+	$(".animation_1").animated("flipInY", "flipOutY");
+	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
+	$(".animation_3").animated("fadeInRight", "fadeOutRight");
+
 
 	function heightDetect(){
 		$(".main_head").css("height", $(window).height())
