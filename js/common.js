@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+	$("#portfolio_grid").mixItUp();
+
+	$(".s_portfolio li").click(function() {
+		$(".s_portfolio li").removeClass("active");
+		$(this).addClass("active");
+	});
+
 	$(".popup").magnificPopup({type:"image"});
 	$(".animation_1").animated("flipInY", "flipOutY");
 	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
