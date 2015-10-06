@@ -56,6 +56,8 @@ $(document).ready(function() {
 		$(this).find("a").attr("href", "#work_" + i);
 		$(this).find(".port_descr").attr("id", "work_" + i);
 	});
+
+	// $("input, select, textarea").jqBootstrapValidation();
 	
 });
 $(window).load(function() {
